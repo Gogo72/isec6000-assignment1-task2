@@ -23,7 +23,8 @@ services:
     environment:
       - JAEGER_AGENT_HOST=jaeger
       - DASHBOARD_URL=http://localhost:9000/
-      - ALLOWED_HOSTS=localhost,api
+      - STOREFRONT_URL=http://localhost:3000/
+      - ALLOWED_HOSTS=localhost,api,storefront,saleor-app-checkout,10.0.2.15,127.0.0.1
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:3.15.2
@@ -93,6 +94,25 @@ services:
     restart: unless-stopped
     networks:
       - saleor-backend-tier
+
+  storefront:
+    extends:
+      file: ./react-storefront/docker-compose.yml
+      service: storefront
+    networks:
+      - saleor-backend-tier
+    depends_on:
+      - api
+      - saleor-app-checkout
+
+  saleor-app-checkout:
+    extends:
+      file: ./react-storefront/docker-compose.yml
+      service: saleor-app-checkout
+    networks:
+      - saleor-backend-tier
+    depends_on:
+      - api
 
 volumes:
   saleor-db:
