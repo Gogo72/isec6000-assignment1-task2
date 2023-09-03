@@ -24,7 +24,7 @@ services:
       - JAEGER_AGENT_HOST=jaeger
       - DASHBOARD_URL=http://localhost:9003/
       - STOREFRONT_URL=http://localhost:3009/
-      - ALLOWED_HOSTS=localhost,api,storefront,saleor-app-checkout,127.0.0.1
+      - ALLOWED_HOSTS=localhost,api,storefront,saleor-app-checkout,127.0.0.1,10.0.2.15
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:3.15.2
