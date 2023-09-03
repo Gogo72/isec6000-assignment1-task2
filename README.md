@@ -4,7 +4,7 @@
 repository for performing activities related to unit ISEC 6000 at Curtin University,Assignment 1, Task 2, 2023
 
 ## Code
-Adjusted Saleor stack
+Modified Saleor stack
 
 ## Instruction for deployment
 - recommendation specs: 4 CPU and 6 GB RAM
