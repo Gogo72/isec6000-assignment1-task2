@@ -21,10 +21,10 @@ services:
       dockerfile: Dockerfile.base
       args:
         - SALEOR_API_URL=http://localhost:8000/graphql/ # handled by nginx
-        - STOREFRONT_URL=http://localhost:3000
+        - STOREFRONT_URL=http://localhost:3009
         - CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
     ports:
-      - 3000:3000
+      - 3009:3000
     command: sh -c '(nginx &) && pnpm turbo run start --filter=storefront...'
