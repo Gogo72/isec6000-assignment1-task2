@@ -1,7 +1,7 @@
 # Project: isec6000-assignment1-task2 
 
 ## Description
-repository for performing activities related to unit ISEC 6000 at Curtin University, 
+repository for performing activities related to unit ISEC 6000 at Curtin University,  
 Assignment 1, Task 2, 2023
 
 ## Code
