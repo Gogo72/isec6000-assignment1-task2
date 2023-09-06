@@ -10,9 +10,9 @@ Modified Saleor stack
 - recommendation specs: 4 CPU and 6 GB RAM
 - clone the repository to the local destination
 - execute: docker compose up -d
-- storefront: 10.0.2.15:3009 (can use 127.0.0.1 or localhost)
-- dashboard: 10.0.2.15:9003 (can use 127.0.0.1 or localhost)
-- api: 10.0.2.15:8000 (can use 127.0.0.1 or localhost)
+- storefront runs on: 10.0.2.15:3009 (can use 127.0.0.1 or localhost)
+- dashboard runs on: 10.0.2.15:9003 (can use 127.0.0.1 or localhost)
+- api runs on: 10.0.2.15:8000 (can use 127.0.0.1 or localhost)
 
 ## Technology used
 Github, Docker, Linux, Virtual Box, Saleor-platform, React-Storefront
@@ -23,5 +23,4 @@ Github, Docker, Linux, Virtual Box, Saleor-platform, React-Storefront
 ## Author
 Tomas Prasil
 
-#### TAG: isec6000-assignment1-task1 
 ![](https://komarev.com/ghpvc/?username=Gogo72&color=yellow)
