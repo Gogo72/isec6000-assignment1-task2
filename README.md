@@ -2,20 +2,45 @@
 
 ## Description
 repository for performing activities related to unit ISEC 6000 at Curtin University,  
-Assignment 1, Task 2, 2023
+Assignment 1, Task 2, 2023  
 
-## Code
 Modified Saleor stack
+- Saleor Core (API) - http://localhost:8000
+- Saleor Dashboard - http://localhost:9003
+- React Sorefront - http://localhost:3009
+- Jaeger UI (APM) - http://localhost:16686
+- Mailpit - http://localhost:8025
+
+## Requirements
+1. 4 CPU and 6 GB RAM
+2. [Docker](https://docs.docker.com/install/)
 
 ## Instruction for deployment
-- recommendation specs: 4 CPU and 6 GB RAM
-- clone the repository to the local destination
-- execute:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd isec6000-assignment1-task2  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker compose up -d  
-- storefront runs on: 10.0.2.15:3009 (can use 127.0.0.1 or localhost)
-- dashboard runs on: 10.0.2.15:9003 (can use 127.0.0.1 or localhost)
-- api runs on: 10.0.2.15:8000 (can use 127.0.0.1 or localhost)
+1. clone the repository to the local destination
+```
+git clone https://github.com/Gogo72/isec6000-assignment1-task2.git
+```
+
+2. Enter the directory
+```shell
+cd isec6000-assignment1-task2
+```
+
+3. Build the saleor stack. may take 15 minutes
+```shell
+docker compose build
+```
+
+4. Pupolate database with initial data, create superuser credentials
+ ```shell
+docker compose run --rm api python3 manage.py migrate
+docker compose run --rm api python3 manage.py populatedb --createsuperuser
+```
+
+5. Run the application
+```shell
+docker compose up -d
+```
 
 ## Technology used
 Github, Docker, Linux, Virtual Box, Saleor-platform, React-Storefront
