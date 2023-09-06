@@ -27,12 +27,12 @@ git clone https://github.com/Gogo72/isec6000-assignment1-task2.git
 cd isec6000-assignment1-task2
 ```
 
-3. Build the saleor stack. may take 15 minutes
+3. Build the saleor stack. (cca 15 minutes)
 ```shell
 docker compose build
 ```
 
-4. Pupolate database with initial data, create superuser credentials
+4. Pupolate database with initial data, create account admin@example.com:admin, (cca 5 minutes)
  ```shell
 docker compose run --rm api python3 manage.py migrate
 docker compose run --rm api python3 manage.py populatedb --createsuperuser
