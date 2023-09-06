@@ -12,7 +12,7 @@ Modified Saleor stack
 - Mailpit - http://localhost:8025
 
 ## Requirements
-1. Computer with 4 CPU and 6 GB RAM, 6 GB HD
+1. Computer with 4 CPU, 6 GB RAM, 6 GB HD
 2. OS, tested with Ubuntu 22.04
 3. [Docker](https://docs.docker.com/install/)
 
