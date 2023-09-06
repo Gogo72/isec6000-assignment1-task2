@@ -12,6 +12,7 @@ Modified Saleor stack
 - execute:
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd isec6000-assignment1-task2
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker compose up -d
 - storefront runs on: 10.0.2.15:3009 (can use 127.0.0.1 or localhost)
 - dashboard runs on: 10.0.2.15:9003 (can use 127.0.0.1 or localhost)
