@@ -12,8 +12,9 @@ Modified Saleor stack
 - Mailpit - http://localhost:8025
 
 ## Requirements
-1. 4 CPU and 6 GB RAM
-2. [Docker](https://docs.docker.com/install/)
+1. Computer with 4 CPU and 6 GB RAM, 4 GB HD
+2. OS, tested with Ubuntu 22.04
+3. [Docker](https://docs.docker.com/install/)
 
 ## Instruction for deployment
 1. clone the repository to the local destination
